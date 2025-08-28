@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Contact | My Website Project</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header and Navigation -->
+  <header>
+    <h1>Student Website Project</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services/Products</a>
+      <a href="enquiry.html">Enquiry</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+
+<!-- Contact Details and Form -->
+<section>
+  <h2>Contact Us</h2>
+  <div class="grid">
+    <article>
+      <h3>Johannesburg Office</h3>
+      <p>123 Main Street, Braamfontein, Johannesburg, 2001</p>
+      <p>Phone: +27 11 000 0000</p>
+      <p>Email: hello-jhb@example.org</p>
+    </article>
+    <article>
+      <h3>Pretoria Office</h3>
+      <p>45 Union Avenue, Arcadia, Pretoria, 0007</p>
+      <p>Phone: +27 12 000 0000</p>
+      <p>Email: hello-pta@example.org</p>
+    </article>
+  </div>
+
+  <h3>Send a Message</h3>
+  <form id="contact-form">
+    <label for="cname">Full Name</label>
+    <input id="cname" name="cname" type="text" required />
+
+    <label for="cemail">Email</label>
+    <input id="cemail" name="cemail" type="email" required />
+
+    <label for="cmsg">Message</label>
+    <textarea id="cmsg" name="cmsg" rows="6" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+  <p id="contact-status" aria-live="polite"></p>
+</section>
+
+  </main>
+  <footer>
+    <p>&copy; 2025 Student Website Project. Built for educational purposes.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

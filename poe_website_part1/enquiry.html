@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enquiry | Student Website Project</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header and Navigation -->
+  <header>
+    <h1>Student Website Project</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services/Products</a>
+      <a href="enquiry.html">Enquiry</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+
+<!-- Enquiry Form -->
+<section>
+  <h2>Enquiry</h2>
+  <p>Use this form to enquire about services/products. If the organisation is an NPO, visitors can enquire about volunteering or sponsorship.</p>
+  <form id="enquiry-form">
+    <label for="type">Enquiry Type</label>
+    <select id="type" name="type" required>
+      <option value="">Select...</option>
+      <option>Service/Product Enquiry</option>
+      <option>Volunteer (NPO)</option>
+      <option>Sponsor (NPO)</option>
+    </select>
+
+    <label for="name">Full Name</label>
+    <input id="name" name="name" type="text" required />
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" required />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+
+    <button type="submit">Submit Enquiry</button>
+  </form>
+  <p id="enquiry-status" aria-live="polite"></p>
+</section>
+
+  </main>
+  <footer>
+    <p>&copy; 2025 Student Website Project. Built for educational purposes.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+
+/* Basic, readable styles for Part 1. Feel free to improve in Part 2/3. */
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; margin: 0; line-height: 1.6; }
+header { padding: 1rem; border-bottom: 1px solid #ddd; }
+header h1 { margin: 0 0 .5rem 0; font-size: 1.4rem; }
+nav a { margin-right: 1rem; text-decoration: none; }
+main { padding: 1rem; }
+footer { border-top: 1px solid #ddd; padding: 1rem; text-align: center; }
+
+.hero { padding: 2rem 1rem; border: 1px solid #eee; border-radius: 8px; }
+.cta { display: inline-block; padding: .6rem 1rem; border: 1px solid #333; border-radius: 6px; text-decoration: none; }
+
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.card { border: 1px solid #e5e5e5; padding: 1rem; border-radius: 8px; }
+
+/* Simple form styles */
+form { display: grid; gap: .6rem; max-width: 640px; }
+input, textarea, select, button { padding: .6rem; border: 1px solid #ccc; border-radius: 6px; }
+button { cursor: pointer; }
