@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enquiry | House Of Grazie</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <div class="logo-circle">
+          <span>HG</span>
+        </div>
+        <span class="logo-text">House Of Grazie</span>
+      </div>
+      <nav class="nav">
+        <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="order.html" class="nav-link">Order Now</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-dropdown">
+            <a href="#" class="nav-link dropdown-toggle active" id="moreDropdown" aria-haspopup="true" aria-expanded="false">
+              MORE <span class="dropdown-arrow">▼</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+              <li><a href="gallery.html" class="dropdown-item">Gallery</a></li>
+              <li><a href="services.html" class="dropdown-item">Services</a></li>
+              <li><a href="contact_us.html" class="dropdown-item">Contact Us</a></li>
+              <li><a href="enquiry.html" class="dropdown-item">Enquiry</a></li>
+              <li><a href="faq.html" class="dropdown-item">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="enquiry-section">
+      <div class="container">
+        <h1>Enquiry</h1>
+        <p>Use this form to enquire about our waffles, catering services, or events. We'll get back to you as soon as possible!</p>
+        <form id="enquiry-form" class="enquiry-form">
+          <label for="type">Enquiry Type *</label>
+          <select id="type" name="type" required>
+            <option value="">Select...</option>
+            <option value="waffle">Waffle Order</option>
+            <option value="catering">Catering</option>
+            <option value="event">Event Services</option>
+            <option value="general">General Enquiry</option>
+          </select>
+          <label for="name">Full Name *</label>
+          <input id="name" name="name" type="text" required />
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" required />
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+          <button type="submit" class="submit-button">Submit Enquiry</button>
+        </form>
+        <p id="enquiry-status" class="form-status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 House Of Grazie. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

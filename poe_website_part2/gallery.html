@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery | House Of Grazie</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <div class="logo-circle">
+          <span>HG</span> <!-- Changed logo initials -->
+        </div>
+        <span class="logo-text">House Of Grazie</span>
+      </div>
+      <nav class="nav">
+        <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="order.html" class="nav-link">Order Now</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="moreDropdown" aria-haspopup="true" aria-expanded="false">
+              MORE <span class="dropdown-arrow">▼</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+              <li><a href="gallery.html" class="dropdown-item">Gallery</a></li>
+              <li><a href="services.html" class="dropdown-item">Services</a></li>
+              <li><a href="contact_us.html" class="dropdown-item">Contact Us</a></li>
+              <li><a href="enquiry.html" class="dropdown-item">Enquiry</a></li>
+              <li><a href="faq.html" class="dropdown-item">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="gallery-section">
+      <div class="container">
+        <h1>Our Waffle Gallery</h1>
+        <p>Take a peek at our delicious creations and happy customers enjoying House Of Grazie waffles.</p>
+
+        <!-- Image Slider Container -->
+        <div class="slider-container">
+          <div class="slider-wrapper">
+            <!-- Slides -->
+            <!-- Replace the src and alt attributes with your actual waffle images -->
+            <div class="slide fade">
+              <img src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=1200&h=600&fit=crop&crop=center" alt="Classic Waffle with crushed oreos">
+            </div>
+            <div class="slide fade">
+              <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=1200&h=600&fit=crop&crop=center" alt="Waffle Stick with Chocolate Syrup">
+            </div>
+            <div class="slide fade">
+              <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1200&h=600&fit=crop&crop=center" alt="Bubble Waffle with Ice-cream, Crushed oreos, and 2 Strips of KitKat Chocolate ">
+            </div>
+            <div class="slide fade">
+              <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=1200&h=600&fit=crop&crop=center" alt="Waffle Toppings Bar with Fresh Fruits and Syrups">
+            </div>
+            <div class="slide fade">
+              <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200&h=600&fit=crop&crop=center" alt="Close-up of a Crispy Pressed Waffle">
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+          <!-- Dots Indicators -->
+          <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 House Of Grazie. All rights reserved.</p>
+      <p>Built for educational purposes.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

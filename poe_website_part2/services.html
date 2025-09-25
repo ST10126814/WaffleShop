@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services | House Of Grazie</title> <!-- Updated Title -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> <!-- Added Fonts -->
+   <!-- Font Awesome for icons (if needed in services) -->
+  <script src="https://kit.fontawesome.com/cbe834ab9a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container"> <!-- Added header-container class -->
+      <div class="logo">
+        <div class="logo-circle">
+          <span>HG</span> <!-- Updated logo initials -->
+        </div>
+        <span class="logo-text">House Of Grazie</span> <!-- Added logo text -->
+      </div>
+      <!--Navigation -->
+      <!-- <header> --> <!-- Removed duplicate header tag -->
+      <nav class="nav"> <!-- Added nav class -->
+         <!-- Mobile Navigation Toggle (if applicable from main.js) -->
+        <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu" id="nav-menu"> <!-- Added nav-menu class -->
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="order.html" class="nav-link">Order Now</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="moreDropdown" aria-haspopup="true" aria-expanded="false"> <!-- Added ID and ARIA -->
+                MORE <span class="dropdown-arrow">▼</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="moreDropdown"> <!-- Added ARIA -->
+                <a href="gallery.html" class="dropdown-item">Gallery</a>
+                <a href="services.html" class="dropdown-item">Services</a> <!-- Active link -->
+                <a href="contact_us.html" class="dropdown-item">Contact Us</a>
+                <a href="enquiry.html" class="dropdown-item">Enquiry</a>
+                <a href="faq.html" class="dropdown-item">FAQ</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <!-- Services or Products -->
+    <section class="services-section"> <!-- Added specific section class -->
+      <div class="container"> <!-- Wrapped content in container -->
+        <h1>Our Services</h1> <!-- Updated main heading -->
+        <p>Discover the unique services we offer to enhance your waffle experience.</p> <!-- Updated intro text -->
+
+        <!-- Service Item A: Event Services (Detailed Content) -->
+        <article class="service-item"> <!-- Wrapped in article -->
+            <!-- Page Header -->
+            <div class="page-header">
+                <p class="subtitle">Making Your Special Occasions Unforgettable</p>
+                <h2 class="page-title"> <!-- Changed to h2 -->
+                    EVENT<br>
+                    <span class="bold">SERVICES</span>
+                </h2>
+            </div>
+
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&h=500&fit=crop" alt="Event waffle station setup" />
+                    </div>
+                    <div class="hero-info">
+                        <h3 class="hero-title">Live Waffle Experiences</h3> <!-- Changed to h3 -->
+                        <p class="hero-description">
+                            Transform your event into an unforgettable experience with our live waffle stations.
+                            Watch as our professional staff creates fresh, hot waffles right before your guests' eyes,
+                            adding excitement and delicious aromas to any celebration.
+                        </p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">200+</span>
+                                <span class="stat-label">Events Served</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Waffle Varieties</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label">Event Support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Event Types -->
+            <section class="event-types">
+                <h3 class="section-title">Perfect For Any Occasion</h3> <!-- Changed to h3 -->
+                <div class="event-grid">
+                    <div class="event-card card"> <!-- Added card class for styling -->
+                        <h4>Corporate Events</h4> <!-- Changed to h4 -->
+                        <p>Team building, meetings, conferences, and office celebrations</p>
+                        <ul>
+                            <li>Professional presentation</li>
+                            <li>Flexible timing</li>
+                            <li>Dietary accommodations</li>
+                        </ul>
+                    </div>
+                    <div class="event-card card"> <!-- Added card class for styling -->
+                        <h4>Birthday Parties</h4> <!-- Changed to h4 -->
+                        <p>Make birthdays extra special with interactive waffle making</p>
+                        <ul>
+                            <li>Kid-friendly stations</li>
+                            <li>Custom decorations</li>
+                            <li>Party packages available</li>
+                        </ul>
+                    </div>
+                    <div class="event-card card"> <!-- Added card class for styling -->
+                        <h4>Weddings & Celebrations</h4> <!-- Changed to h4 -->
+                        <p>Elegant waffle bars for your most important moments</p>
+                        <ul>
+                            <li>Brunch receptions</li>
+                            <li>Late-night treats</li>
+                            <li>Custom menu design</li>
+                        </ul>
+                    </div>
+                    <div class="event-card card"> <!-- Added card class for styling -->
+                        <h4>Community Events</h4> <!-- Changed to h4 -->
+                        <p>Festivals, fundraisers, and community gatherings</p>
+                        <ul>
+                            <li>High-volume service</li>
+                            <li>Mobile equipment</li>
+                            <li>Crowd-pleasing options</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- What's Included -->
+            <section class="included-section">
+                <div class="included-content">
+                    <div class="included-info">
+                        <h3 class="section-title">What's Included</h3> <!-- Changed to h3 -->
+                        <div class="included-features">
+                            <div class="feature">
+                                <h4>Professional Staff</h4>
+                                <p>Trained waffle artists who engage with your guests and ensure perfect waffles every time.</p>
+                            </div>
+                            <div class="feature">
+                                <h4>Complete Setup</h4>
+                                <p>We handle all equipment, setup, and breakdown so you can focus on your event.</p>
+                            </div>
+                            <div class="feature">
+                                <h4>Premium Ingredients</h4>
+                                <p>Fresh waffle batter, premium toppings, and locally roasted coffee.</p>
+                            </div>
+                            <div class="feature">
+                                <h4>Customizable Menu</h4>
+                                <p>Sweet and savory options tailored to your event and dietary needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="included-image">
+                        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&h=400&fit=crop" alt="Professional event setup" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Booking Process -->
+            <section class="booking-section">
+                <h3 class="section-title">How to Book Your Event</h3> <!-- Changed to h3 -->
+                <div class="booking-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4>Contact Us</h4> <!-- Changed to h4 -->
+                        <p>Reach out at least 2 weeks in advance with your event details.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4>Custom Quote</h4> <!-- Changed to h4 -->
+                        <p>We'll create a personalized package based on your needs and budget.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4>Finalize Details</h4> <!-- Changed to h4 -->
+                        <p>Menu selection, timing, and special requirements confirmation.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h4>Event Day</h4> <!-- Changed to h4 -->
+                        <p>We arrive early, set up, and deliver an amazing waffle experience.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h3 class="contact-title">Ready to Plan Your Event?</h3> <!-- Changed to h3 -->
+                <p class="contact-text">Let's create an unforgettable waffle experience for your guests!</p>
+                <div class="contact-buttons">
+                    <!-- Updated buttons to links for consistency -->
+                    <a href="enquiry.html" class="btn btn-primary">Book Your Event</a>
+                    <a href="enquiry.html" class="btn btn-outline">Get Custom Quote</a>
+                </div>
+                <div class="contact-info">
+                    <p>Call us at <strong>+27 614809124</strong> or email <strong>tumelomaxtteka@gmail.com</strong></p> <!-- Updated contact info -->
+                </div>
+            </div>
+        </article> <!-- End of Service Item A -->
+
+        <!-- Service Item B: Catering Services (Detailed Content) -->
+        <article class="service-item">
+            <!-- Page Header -->
+            <div class="page-header">
+                <p class="subtitle">Treat Yourself</p>
+                <h2 class="page-title"> <!-- Changed to h2 -->
+                    CATERING<br>
+                    <span class="bold">SERVICES</span>
+                </h2>
+            </div>
+
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-info">
+                        <h3 class="hero-title">Stress-Free Catering</h3> <!-- Changed to h3 -->
+                        <p class="hero-description">
+                            Let House of Grazie handle the food for your next meeting, celebration, or gathering.
+                            We deliver fresh, hot waffles and all the fixings directly to your location, ensuring
+                            your event is both delicious and memorable.
+                        </p>
+                        <div class="hero-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">🚚</span>
+                                <span>Free Delivery</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">⏰</span>
+                                <span>48hr Notice</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">👥</span>
+                                <span>Any Group Size</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&h=500&fit=crop" alt="Catering spread with waffles" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Catering Packages -->
+            <section class="packages-section">
+                <h3 class="section-title">Catering Packages</h3> <!-- Changed to h3 -->
+                <div class="packages-grid">
+                    <div class="package-card card"> <!-- Added card class -->
+                        <div class="package-header">
+                            <h4>Breakfast Meeting</h4> <!-- Changed to h4 -->
+                            <p class="package-price">Starting at R100/person</p>
+                        </div>
+                        <div class="package-content">
+                            <p class="package-description">Perfect for morning meetings and conferences</p>
+                            <ul class="package-includes">
+                                <li>Fresh Belgian waffles</li>
+                                <li>Assorted toppings bar</li>
+                                <li>Premium coffee service</li>
+                                <li>Fresh fruit selection</li>
+                                <li>Serving utensils included</li>
+                            </ul>
+                            <p class="package-minimum">Minimum 10 people</p>
+                        </div>
+                    </div>
+
+                    <div class="package-card card featured"> <!-- Added card and featured class -->
+                        <div class="package-badge">Most Popular</div>
+                        <div class="package-header">
+                            <h4>Brunch Celebration</h4> <!-- Changed to h4 -->
+                            <p class="package-price">Starting at R180/person</p>
+                        </div>
+                        <div class="package-content">
+                            <p class="package-description">Ideal for parties, showers, and celebrations</p>
+                            <ul class="package-includes">
+                                <li>Sweet & savory waffle options</li>
+                                <li>Premium toppings selection</li>
+                                <li>Coffee & juice service</li>
+                                <li>Seasonal fruit display</li>
+                                <li>Whipped cream & syrups</li>
+                                <li>Complete setup service</li>
+                            </ul>
+                            <p class="package-minimum">Minimum 15 people</p>
+                        </div>
+                    </div>
+
+                    <div class="package-card card"> <!-- Added card class -->
+                        <div class="package-header">
+                            <h4>Corporate Lunch</h4> <!-- Changed to h4 -->
+                            <p class="package-price">Starting at R150/person</p>
+                        </div>
+                        <div class="package-content">
+                            <p class="package-description">Savory options for lunch meetings</p>
+                            <ul class="package-includes">
+                                <li>Savory waffle sandwiches</li>
+                                <li>Mixed green salads</li>
+                                <li>Beverage selection</li>
+                                <li>Dessert waffle bites</li>
+                                <li>Professional presentation</li>
+                            </ul>
+                            <p class="package-minimum">Minimum 12 people</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Menu Highlights -->
+            <section class="menu-section">
+                <div class="menu-content">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=600&h=400&fit=crop" alt="Waffle menu items" />
+                    </div>
+                    <div class="menu-info">
+                        <h3 class="section-title">Menu Highlights</h3> <!-- Changed to h3 -->
+                        <div class="menu-categories">
+                            <div class="menu-category">
+                                <h4>Sweet Options</h4>
+                                <ul>
+                                    <li>Classic Italian waffle with berries</li>
+                                    <li>Chocolate chip with whipped cream</li>
+                                    <li>Cinnamon sugar with maple syrup</li>
+                                    <li>Seasonal fruit toppings</li>
+                                </ul>
+                            </div>
+                            <div class="menu-category">
+                                <h4>Savory Selections</h4>
+                                <ul>
+                                    <li>Chicken & waffle sliders</li>
+                                    <li>Bubble waffles with Ice-cream</li>
+                                    <li>Herb & vegetable options</li>
+                                    <li>Gluten-free alternatives</li>
+                                </ul>
+                            </div>
+                            <div class="menu-category">
+                                <h4>Beverages</h4>
+                                <ul>
+                                    <li>Locally roasted coffee</li>
+                                    <li>Fresh orange juice</li>
+                                    <li>Assorted teas</li>
+                                    <li>Sparkling water</li>
+                                    <ii>Mimosas</ii>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How It Works -->
+            <section class="process-section">
+                <h3 class="section-title">How Our Catering Works</h3> <!-- Changed to h3 -->
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-icon">📞</div>
+                        <h4>Order</h4> <!-- Changed to h4 -->
+                        <p>Call or email us at least 48 hours in advance with your event details and headcount</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-icon">📋</div>
+                        <h4>Customize</h4> <!-- Changed to h4 -->
+                        <p>Work with our team to select the perfect menu and accommodate dietary restrictions</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-icon">🚚</div>
+                        <h4>Deliver</h4> <!-- Changed to h4 -->
+                        <p>We arrive on time with hot, fresh waffles and complete setup for your event</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-icon">😋</div>
+                        <h4>Enjoy</h4> <!-- Changed to h4 -->
+                        <p>Your guests enjoy delicious waffles while you focus on what matters most</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dietary Options -->
+            <section class="dietary-section">
+                <div class="dietary-content">
+                    <div class="dietary-info">
+                        <h3 class="section-title">Dietary Accommodations</h3> <!-- Changed to h3 -->
+                        <p class="dietary-description">
+                            We believe everyone should be able to enjoy our waffles. That's why we offer
+                            a variety of options to accommodate different dietary needs and preferences.
+                        </p>
+                        <div class="dietary-options">
+                            <div class="dietary-option">
+                                <h4>Gluten-Free</h4>
+                                <p>Special gluten-free waffle batter available upon request</p>
+                            </div>
+                            <div class="dietary-option">
+                                <h4>Vegan</h4>
+                                <p>Plant-based waffle options and dairy-free toppings</p>
+                            </div>
+                            <div class="dietary-option">
+                                <h4>Allergies</h4>
+                                <p>We can accommodate most food allergies with advance notice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dietary-image">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&h=400&fit=crop" alt="Healthy waffle options" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h3 class="contact-title">Ready to Order Catering?</h3> <!-- Changed to h3 -->
+                <p class="contact-text">Contact us at least 48 hours in advance to ensure availability for your event.</p>
+                <div class="contact-buttons">
+                    <!-- Updated buttons to links for consistency -->
+                    <a href="enquiry.html" class="btn btn-primary">Order Catering Now</a>
+                    <a href="enquiry.html" class="btn btn-outline">Get Custom Quote</a> <!-- Or link to a PDF menu if available -->
+                </div>
+                <div class="contact-info">
+                    <p>Call us at <strong>+91 7900031156</strong> or email <strong>british.malad@gmail.com</strong></p> <!-- Updated contact info -->
+                </div>
+            </div>
+        </article> <!-- End of Service Item B -->
+
+    
+
+      </div> <!-- End container -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 House Of Grazie. All rights reserved.</p> <!-- Updated footer text -->
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script> <!-- Ensure main.js handles dropdown/menu -->
+</body>
+</html>
