@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order Now | House Of Grazie</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/cbe834ab9a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <div class="logo-circle">
+          <span>HG</span> <!-- Updated logo initials -->
+        </div>
+        <span class="logo-text">House Of Grazie</span>
+      </div>
+      <nav class="nav">
+
+        <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="order.html" class="nav-link active">Order Now</a></li> <!-- Active link -->
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-dropdown">
+
+            <a href="#" class="nav-link dropdown-toggle" id="moreDropdown" aria-haspopup="true" aria-expanded="false">
+              MORE <span class="dropdown-arrow">▼</span>
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+              <li><a href="gallery.html" class="dropdown-item">Gallery</a></li>
+              <li><a href="services.html" class="dropdown-item">Services</a></li>
+              <li><a href="contact_us.html" class="dropdown-item">Contact Us</a></li>
+              <li><a href="enquiry.html" class="dropdown-item">Enquiry</a></li>
+              <li><a href="faq.html" class="dropdown-item">FAQ</a></li>
+            </ul>
+            
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="order-section">
+      <div class="container">
+        <h1>Order Your Waffles</h1>
+        <p class="order-intro">Ready for something delicious? Choose how you'd like to place your order and get your perfect waffle fix!</p>
+
+        <!-- Order Options -->
+        <div class="order-options">
+          <article class="order-option-card">
+            <div class="option-icon">
+              <i class="fas fa-store"></i>
+            </div>
+            <h2>In-Store Pickup</h2>
+            <p>Visit us at our location. Skip the line by ordering ahead for pickup.</p>
+            <a href="contact_us.html" class="btn btn-primary">Find Us</a>
+          </article>
+
+          <article class="order-option-card">
+            <div class="option-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h2>Call To Order</h2>
+            <p>Speak directly with our team to place your order over the phone.</p>
+            <a href="tel:+917900031156" class="btn btn-primary">Call Now: +27 672200448</a>
+          </article>
+
+          <article class="order-option-card">
+            <div class="option-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h2>Delivery</h2>
+            <p>Have your waffles delivered hot and fresh to your doorstep.</p>
+            <p class="delivery-note"><strong>Note:</strong> Delivery available via third-party apps. We recommend checking your preferred delivery platform.</p>
+            <div class="delivery-apps">
+                <h3>Order via Popular Apps:</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Zomato</li>
+                    <li><i class="fas fa-check-circle"></i> Swiggy</li>
+                    <li><i class="fas fa-check-circle"></i> Uber Eats</li>
+                </ul>
+            </div>
+          </article>
+        </div>
+
+        <!-- Online Ordering (Placeholder/CTA) -->
+        <section class="online-ordering">
+          <h2>Online Ordering Coming Soon!</h2>
+          <p>We are working hard to bring you a seamless online ordering experience directly through our website. Stay tuned for updates!</p>
+          <p>In the meantime, please use the options above to place your order.</p>
+        </section>
+
+        <!-- Order Information -->
+        <section class="order-info">
+          <h2>Important Order Information</h2>
+          <div class="info-grid">
+            <div class="info-item">
+              <h3><i class="fas fa-clock info-icon"></i> Preparation Time</h3>
+              <p>Waffles are made fresh to order. Please allow <strong>10-15 minutes</strong> for preparation, especially during peak hours.</p>
+            </div>
+            <div class="info-item">
+              <h3><i class="fas fa-exclamation-triangle info-icon"></i> Allergens</h3>
+              <p>Our waffles contain wheat, dairy, and eggs. Please inform us of any severe allergies when ordering. Gluten-free options available.</p>
+            </div>
+            <div class="info-item">
+              <h3><i class="fas fa-tags info-icon"></i> Special Requests</h3>
+              <p>Have a specific request for your waffle? Let us know when you place your order. We'll do our best to accommodate.</p>
+            </div>
+            <div class="info-item">
+              <h3><i class="fas fa-calendar-alt info-icon"></i> Catering & Large Orders</h3>
+              <p>For orders of 10+ waffles or catering needs, please place your order at least <strong>24 hours in advance</strong>.</p>
+              <a href="services.html">Learn more about catering</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 House Of Grazie. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

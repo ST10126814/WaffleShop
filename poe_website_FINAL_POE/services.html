@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services | House Of Grazie</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/cbe834ab9a.js" crossorigin="anonymous"></script>
+  <style>
+    /* Add this CSS to style.css or keep it here in a <style> tag */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Adjust minmax width as needed */
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(139, 69, 19, 0.1);
+      overflow: hidden; /* Ensure content doesn't overflow */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(139, 69, 19, 0.15);
+    }
+
+    .service-card h2 {
+      background-color: #8B4513; /* SaddleBrown header */
+      color: white;
+      margin: 0;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .service-card-content {
+      padding: 1.5rem;
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 200px; /* Set a fixed height */
+      object-fit: cover; /* Crop image to fit */
+    }
+
+    .service-card ul {
+      padding-left: 1.5rem;
+    }
+
+    .service-card .btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .services-grid {
+        grid-template-columns: 1fr; /* Stack on smaller screens */
+        gap: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <div class="logo-circle">
+          <span>HG</span>
+        </div>
+        <span class="logo-text">House Of Grazie</span>
+      </div>
+      <nav class="nav">
+        <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="order.html" class="nav-link">Order Now</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-dropdown">
+            <a href="#" class="nav-link dropdown-toggle active" id="moreDropdown" aria-haspopup="true" aria-expanded="false">
+                MORE <span class="dropdown-arrow">▼</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                <a href="gallery.html" class="dropdown-item">Gallery</a>
+                <a href="services.html" class="dropdown-item active">Services</a>
+                <a href="contact_us.html" class="dropdown-item">Contact Us</a>
+                <a href="enquiry.html" class="dropdown-item">Enquiry</a>
+                <a href="faq.html" class="dropdown-item">FAQ</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Services Section -->
+    <section class="services-section">
+      <div class="container">
+        <h1>Our Services</h1>
+        <p>Discover the unique services we offer to enhance your waffle experience.</p>
+
+        <div class="services-grid">
+          <!-- Event Services Card -->
+          <div class="service-card">
+            <h2>Event Services</h2>
+            <div class="service-card-content">
+              <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&h=300&fit=crop" alt="Event waffle station setup" />
+              <p>Transform your event into an unforgettable experience with our live waffle stations. Watch as our professional staff creates fresh, hot waffles right before your guests' eyes.</p>
+              <ul>
+                <li>Perfect for corporate events, parties, weddings, and community gatherings</li>
+                <li>Professional presentation and setup</li>
+                <li>Dietary accommodations available</li>
+                <li>24/7 event support</li>
+              </ul>
+              <a href="enquiry.html" class="btn btn-outline">Book Your Event</a>
+            </div>
+          </div>
+
+          <!-- Catering Services Card -->
+          <div class="service-card">
+            <h2>Catering Services</h2>
+            <div class="service-card-content">
+              <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&h=300&fit=crop" alt="Catering spread with waffles" />
+              <p>Let House of Grazie handle the food for your next meeting or celebration. We deliver fresh, hot waffles directly to your location.</p>
+              <ul>
+                <li>Free delivery for orders over R500</li>
+                <li>48-hour notice required</li>
+                <li>Options for any group size</li>
+                <li>Gluten-free and vegan options available</li>
+              </ul>
+              <a href="enquiry.html" class="btn btn-outline">Order Catering</a>
+            </div>
+          </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 House Of Grazie. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

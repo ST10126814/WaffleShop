@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Indulge in perfectly pressed waffles at House Of Grazie. Fresh ingredients, endless customization, and a unique crispy-fluffy texture. Explore our menu today!">
+  <meta name="keywords" content="waffles, House Of Grazie, pressed waffles, breakfast, dessert, Johannesburg, catering, brunch, fresh ingredients">
+  <title>Home | House Of Grazie - Perfectly Pressed Waffles</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <div class="logo-circle">
+          <span>HG</span>
+        </div>
+        <span class="logo-text">House Of Grazie</span>
+      </div>
+      <nav class="nav">
+        <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="order.html" class="nav-link">Order Now</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="moreDropdown" aria-haspopup="true" aria-expanded="false">
+              MORE <span class="dropdown-arrow">▼</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+              <li><a href="gallery.html" class="dropdown-item">Gallery</a></li>
+              <li><a href="services.html" class="dropdown-item">Services</a></li>
+              <li><a href="contact_us.html" class="dropdown-item">Contact Us</a></li>
+              <li><a href="enquiry.html" class="dropdown-item">Enquiry</a></li>
+              <li><a href="faq.html" class="dropdown-item">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Treat Yourself.</h1>
+        <p class="hero-subtitle">Indulge in Perfectly Pressed Waffles. Experience the unique taste of our signature pressed waffles, crafted fresh daily.</p>
+        <a class="cta-button" href="menu.html">Explore Our Menu</a>
+      </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+      <div class="container">
+        <h2>Welcome to House Of Grazie</h2>
+        <p>At House Of Grazie, we're passionate about creating the perfect waffle experience. Our signature pressed technique delivers a crispy exterior and fluffy interior, ready to be topped with your favorite sweet or savory creations.</p>
+      </div>
+    </section>
+
+    <!-- Why Choose Us (Accordion) -->
+    <section class="why-us">
+      <div class="container">
+        <h2>Why Choose Us</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">Signature Pressed Technique</button>
+            <div class="accordion-panel">
+              <p>Our unique method ensures a perfect texture every time. Crispy on the outside, fluffy on the inside — just like grandma used to make, but better!</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Fresh Ingredients</button>
+            <div class="accordion-panel">
+              <p>We use only the finest, locally sourced ingredients. From farm-fresh berries to premium chocolate, every bite is bursting with flavor.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Endless Customization</button>
+            <div class="accordion-panel">
+              <p>Build your own waffle masterpiece with our wide variety of toppings. Sweet? Savory? Vegan? We’ve got you covered.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest News (Dynamic Content) -->
+    <section class="news-section">
+      <div class="container">
+        <h2>Latest News</h2>
+        <div id="news-container" class="news-grid">
+          <!-- Dynamic content will be loaded here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Search/Filter -->
+    <section class="services-section">
+      <div class="container">
+        <h2>Our Services</h2>
+        <input type="text" id="service-search" placeholder="Search services..." class="search-bar">
+        <div id="services-container" class="services-grid">
+          <div class="service-card" data-category="catering">
+            <h3>Catering</h3>
+            <p>Bring the waffle experience to your event. Perfect for weddings, corporate functions, and parties.</p>
+          </div>
+          <div class="service-card" data-category="delivery">
+            <h3>Delivery</h3>
+            <p>Enjoy fresh waffles delivered right to your door within a 10km radius.</p>
+          </div>
+          <div class="service-card" data-category="events">
+            <h3>Waffle Workshops</h3>
+            <p>Learn how to make the perfect waffle at home in our fun, interactive workshops.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Preview (Lightbox Trigger) -->
+    <section class="gallery-preview">
+      <div class="container">
+        <h2>See Our Waffles</h2>
+        <div class="gallery-grid">
+          <img src="images/waffle1.jpg" alt="Classic Belgian Waffle" class="gallery-item" data-large="images/waffle1-large.jpg">
+          <img src="images/waffle2.jpg" alt="Berry Bliss Waffle" class="gallery-item" data-large="images/waffle2-large.jpg">
+          <img src="images/waffle3.jpg" alt="Savory Chicken & Waffle" class="gallery-item" data-large="images/waffle3-large.jpg">
+        </div>
+        <a href="gallery.html" class="cta-button">View Full Gallery</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 House Of Grazie. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

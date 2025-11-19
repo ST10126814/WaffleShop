@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /temp/
+
+Sitemap: https://st10126814.github.io/WaffleShop/sitemap.xml
